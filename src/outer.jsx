@@ -1,9 +1,14 @@
 const Header = ()  => {
     return (
-        <div>
-            <Button text="The Milky Way"></Button>
-            <Button text="Products"></Button>
-            <Button text="Login"></Button>
+        <div className="header">
+            <div className="left">
+                <p>The Biky Way</p>
+                <img src="./resources/bike.svg"></img>
+            </div>
+            <div className="right">
+                <Button text="Products"></Button>
+                <Button text="Login"></Button>
+            </div>
         </div>
     )
 }
@@ -29,10 +34,11 @@ const Footer = () => {
 const Outer = () => {
 
     return (
-        <>       
+        <div className="outer">       
             <Header></Header>
+            <div className="main"></div>
             <Footer></Footer>
-        </>
+        </div>
  
     )
 }
