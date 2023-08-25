@@ -1,9 +1,11 @@
+import Home from "./home.jsx"
+
 const Header = ()  => {
     return (
         <div className="header">
             <div className="left">
                 <p>The Biky Way</p>
-                <img src="./resources/bike.svg"></img>
+                <img src="./src/assets/bike.svg"></img>
             </div>
             <div className="right">
                 <Button text="Products"></Button>
@@ -13,11 +15,11 @@ const Header = ()  => {
     )
 }
 
-const Button = ({text}) => {
+const Button = ({text,clas}) => {
     
     
     return(
-        <div className="button">
+        <div className={clas ? clas : 'button'}>
             <p>{text}</p>
         </div>
     )
@@ -26,7 +28,7 @@ const Button = ({text}) => {
 const Footer = () => {
     return (
         <div className='footer'>
-            <p>2023 - hCode122</p>
+            <p>2023 </p>
         </div>
     )
 }
@@ -36,7 +38,7 @@ const Outer = () => {
     return (
         <div className="outer">       
             <Header></Header>
-            <div className="main"></div>
+            <Home></Home>
             <Footer></Footer>
         </div>
  
