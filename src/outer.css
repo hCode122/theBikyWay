@@ -3,7 +3,7 @@ html {
     margin: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-
+    overflow-x: hidden;
 }
 
 body {
@@ -11,8 +11,13 @@ body {
     height: 100%;
 }
 
+.head {
+    max-width: 13vw;
+    text-decoration: none;
+}
+
 .header p {
-    color: #ff5500;
+    color: #979797;
     font-weight: bold;
     
     font-size: 4vh;
@@ -32,15 +37,15 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    color: #ff5500;
+    
+    color: rgb(151, 151, 151);;
     font-weight: bold;
     
     width: 20vw;
-
+    text-decoration: none;
     border: solid 2px;
     border-radius: 5px;
-    border-color: rgb(255, 85, 0);
+    border-color: rgb(151, 151, 151);;
 }
 
 .button * {
@@ -57,18 +62,12 @@ img {
 }
 
 .right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-
-    max-width: 42vw
-}
-
-.right * {
-    flex: 1;
+    font-size: 2.5vh;
     max-height: 5vh;
+    max-width: 22vw
 }
+
+
 
 .left {
     max-width: 32vw;
@@ -97,13 +96,13 @@ img {
 .header {
     padding: 12px;
     box-sizing: border-box;
-    background-image: linear-gradient(to right,rgb(61, 1, 98), black);
+    background-image: linear-gradient(to right,rgb(38, 40, 69), rgb(7, 1, 58));
 
     border-bottom: solid 1px black ;
 
     width: 100%;
     max-height: 9vh;
-
+    text-decoration: none;
     
     display: flex;
     flex-direction: row;
@@ -111,8 +110,9 @@ img {
 }
 
 .footer {
-    background-image: linear-gradient(to right,rgb(61, 1, 98), black);
-    color: rgb(255, 85, 0);
+    margin-top: 1vh;
+    background-image: linear-gradient(to right,rgb(38, 40, 69), rgb(7, 1, 58));;
+    color: rgb(151, 151, 151);
     border: solid 2px black;
     max-height: 6vh;
     display: flex;

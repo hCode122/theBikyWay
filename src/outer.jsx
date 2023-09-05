@@ -1,16 +1,25 @@
 import Home from "./home.jsx"
+import Products from "./products.jsx"
+import { useParams } from "react-router-dom"
+import {Link} from "react-router-dom"
+
 
 const Header = ()  => {
+    
     return (
         <div className="header">
             <div className="left">
-                <p>The Biky Way</p>
+                <Link to='/' className="head"><p>The Biky Way</p></Link>
                 <img src="./src/assets/bike.svg"></img>
             </div>
             <div className="right">
-                <Button text="Products"></Button>
-                <Button text="Login"></Button>
+                <Link to="/products" className="button">Products</Link>
+                
+                
             </div>
+            
+            
+            
         </div>
     )
 }
@@ -19,9 +28,10 @@ const Button = ({text,clas}) => {
     
     
     return(
-        <div className={clas ? clas : 'button'}>
+        <div className={'button'}>
             <p>{text}</p>
         </div>
+        
     )
 }
 
@@ -34,11 +44,20 @@ const Footer = () => {
 }
 
 const Outer = () => {
-
+    const { name } = useParams();
     return (
-        <div className="outer">       
+        
+        <div className="outer">     
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>   
+
+
             <Header></Header>
-            <Home></Home>
+            {name === "products" ? (
+                    <Products />
+                ): (<Home></Home>)}
+            
             <Footer></Footer>
         </div>
  
