@@ -17,9 +17,7 @@ const Home = () => {
 const Greeting = () => {
     return (
         <div className="greeting">
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/> 
+            
             <h1>Welcome To The Biky Way!</h1>
             <p>
                 Ride as fast as commmets with bicycles that are out of this world!

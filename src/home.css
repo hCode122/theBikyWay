@@ -15,7 +15,7 @@
     padding: 15px;
     flex: 1;
     max-width: 30vw;
-    border: solid rgb(255, 85, 0);
+    border: solid rgb(151, 151, 151);
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.84))  ;
     max-height: 60vh;
     border-radius: 10px;
@@ -29,7 +29,7 @@
 }
 
 h1 {
-    color: rgb(255, 85, 0);
+    color: rgb(151, 151, 151);
 }
 
 
@@ -42,7 +42,7 @@ h1 {
 
 .img1, .img2 {
     max-width: 20vw;
-    border: solid 5px rgb(97, 8, 152);
+    border: solid 5px rgb(38, 40, 69);
 }
 
 .img1 {
@@ -61,6 +61,6 @@ h1 {
 }
 
 .pBtn {
-    background-color: #ff5500;
+    background-color: #969696;
     border: none;
 }

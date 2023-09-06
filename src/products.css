@@ -4,7 +4,7 @@
     grid-template-columns: 25vw 25vw;
     max-width: 80vw;
     gap: 2vw;
-    
+    padding-bottom: 3vh;
 }
 
 .products img {
@@ -250,7 +250,6 @@
 }
 
 .drop {
-   
     position: absolute;
     left: 5vw;
     top: 10vh;

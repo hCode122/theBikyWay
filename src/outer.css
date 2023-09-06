@@ -4,6 +4,7 @@ html {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+   
 }
 
 body {
@@ -66,8 +67,15 @@ img {
     max-height: 5vh;
     max-width: 22vw
 }
+.button {
+    transition: 0.5s;
+}
 
-
+.button:hover {
+    
+    color: white;
+    border-color: white;
+}
 
 .left {
     max-width: 32vw;
@@ -110,22 +118,23 @@ img {
 }
 
 .footer {
-    margin-top: 1vh;
+    
     background-image: linear-gradient(to right,rgb(38, 40, 69), rgb(7, 1, 58));;
     color: rgb(151, 151, 151);
     border: solid 2px black;
-    max-height: 6vh;
+    max-height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .outer {
-    
     display: flex;
     flex-direction: column;
 }
 
+
+
 .main {
-    min-height: 100vh;
+    
 }
