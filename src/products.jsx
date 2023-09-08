@@ -65,9 +65,6 @@ const ProductList = ({type,data,setData,sum,setSum}) => {
                 
             }
         }));
-        var s = sum;
-        alert(val);
-        alert(price);
         setSum((sum) => val*parseInt(price) + sum);
     }
     
