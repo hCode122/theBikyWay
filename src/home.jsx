@@ -34,8 +34,8 @@ const Greeting = () => {
 const Pics = () => {
     return (
         <div className="imgs">
-            <img className="img1" src="/assets/bike2.jpg"></img>
-            <img className="img2" src="/assets/bike1.jpg"></img>
+            <img className="img1" src="./assets/bike2.jpg"></img>
+            <img className="img2" src="./assets/bike1.jpg"></img>
         </div>
     )
 }

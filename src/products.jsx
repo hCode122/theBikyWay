@@ -71,24 +71,24 @@ const ProductList = ({type,data,setData,sum,setSum}) => {
     return(
         <div className="products">
             { type  == "road" ?  (<>
-                <Item addItem={update} data={data} lnk='/assets/bike5.jpg' nam='bike A' price='500'></Item>
-                <Item addItem={update} data={data} lnk='/assets/bike6.jpg' nam='bike B' price='700'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike5.jpg' nam='bike A' price='500'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike6.jpg' nam='bike B' price='700'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk='/assets/bike7.jpg' nam='bike C' price='600'></Item>
-                <Item addItem={update} data={data} lnk='/assets/bike8.jpg' nam='bike D' price='1500'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike7.jpg' nam='bike C' price='600'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike8.jpg' nam='bike D' price='1500'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk='/assets/bike9.jpg' nam='bike E' price='3600'></Item>
-                <Item addItem={update} data={data} lnk='/assets/bike10.jpg' nam='bike F' price='3100'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike9.jpg' nam='bike E' price='3600'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike10.jpg' nam='bike F' price='3100'></Item>
                 </>
             ) : type == "tour" ?  (<>
-                <Item addItem={update} data={data} lnk='/assets/bike11.jpg' nam='bike G' price='300'></Item>
-                <Item addItem={update} data={data} lnk='/assets/bike12.jpg' nam='bike H' price='1300'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike11.jpg' nam='bike G' price='300'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike12.jpg' nam='bike H' price='1300'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk='/assets/bike13.jpg' nam='bike I' price='800'></Item>
-                <Item addItem={update} data={data} lnk='/assets/bike14.jpg' nam='bike J' price='2500'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike13.jpg' nam='bike I' price='800'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike14.jpg' nam='bike J' price='2500'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk='/assets/bike15.jpg' nam='bike K' price='1600'></Item>
-                <Item addItem={update} data={data} lnk='/assets/bike16.jpg' nam='bike L' price='440'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike15.jpg' nam='bike K' price='1600'></Item>
+                <Item addItem={update} data={data} lnk='./assets/bike16.jpg' nam='bike L' price='440'></Item>
                 </>
             ) : (<></>)
             }   
@@ -121,7 +121,7 @@ const Item = ({lnk,nam,price,addItem,data}) => {
             <img src={lnk}></img>
             <label>Name: {nam}</label>
             <div className="price">
-                <img src='/assets/price.svg'></img>
+                <img src='./assets/price.svg'></img>
                 <p>Costs: {price}$</p>
             </div>
             
@@ -165,7 +165,7 @@ const Cart = ({data,sum}) => {
 
     return(
         <>
-        <button onClick={cart} className={clas}><img className="cimg" src='/assets/cart.svg'></img></button>
+        <button onClick={cart} className={clas}><img className="cimg" src='./assets/cart.svg'></img></button>
         <div key='text' className={itemClas}>
                 <label className="iLabel">Shopping cart</label>
                 <div className="items">
