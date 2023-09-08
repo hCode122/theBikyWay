@@ -71,10 +71,10 @@ const ProductList = ({type,data,setData,sum,setSum}) => {
     return(
         <div className="products">
             { type  == "road" ?  (<>
-                <Item addItem={update} data={data} lnk='./assets/bike5.jpg' nam='bike A' price='500'></Item>
-                <Item addItem={update} data={data} lnk='./assets/bike6.jpg' nam='bike B' price='700'></Item>
+                <Item addItem={update} data={data} lnk="assets/bike5.jpg" nam='bike A' price='500'></Item>
+                <Item addItem={update} data={data} lnk="./assets/bike6.jpg" nam='bike B' price='700'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk='./assets/bike7.jpg' nam='bike C' price='600'></Item>
+                <Item addItem={update} data={data} lnk="/assets/bike7.jpg" nam='bike C' price='600'></Item>
                 <Item addItem={update} data={data} lnk='./assets/bike8.jpg' nam='bike D' price='1500'></Item>
                 <div className="line"></div>
                 <Item addItem={update} data={data} lnk='./assets/bike9.jpg' nam='bike E' price='3600'></Item>
