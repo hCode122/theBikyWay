@@ -10,7 +10,7 @@ const Header = ()  => {
         <div className="header">
             <div className="left">
                 <Link to='/' className="head"><p>The Biky Way</p></Link>
-                <img src="/assets/bike.svg"></img>
+                <img src="assets/bike.svg"></img>
             </div>
             <div className="right">
                 <Link to="/products" className="button">Products</Link>
