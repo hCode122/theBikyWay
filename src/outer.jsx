@@ -9,11 +9,11 @@ const Header = ()  => {
     return (
         <div className="header">
             <div className="left">
-                <Link to='/' className="head"><p>The Biky Way</p></Link>
+                <Link to='/TheBikyWay' className="head"><p>The Biky Way</p></Link>
                 <img src={logo}></img>
             </div>
             <div className="right">
-                <Link to="/products" className="button">Products</Link>
+                <Link to="/TheBikyWay/products" className="button">Products</Link>
                 
                 
             </div>
