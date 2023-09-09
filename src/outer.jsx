@@ -2,7 +2,7 @@ import Home from "./home.jsx"
 import Products from "./products.jsx"
 import { useParams } from "react-router-dom"
 import {Link} from "react-router-dom"
-
+import logo from "./assets/bike.svg"
 
 const Header = ()  => {
     
@@ -10,7 +10,7 @@ const Header = ()  => {
         <div className="header">
             <div className="left">
                 <Link to='/' className="head"><p>The Biky Way</p></Link>
-                <img src="./assets/bike.svg"></img>
+                <img src={logo}></img>
             </div>
             <div className="right">
                 <Link to="/products" className="button">Products</Link>

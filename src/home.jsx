@@ -1,6 +1,6 @@
 import "./home.css"
-
-
+import bike2a from "./assets/bike2.jpg"
+import bike2b from "./assets/bike1.jpg"
 
 
 const Home = () => {
@@ -34,8 +34,8 @@ const Greeting = () => {
 const Pics = () => {
     return (
         <div className="imgs">
-            <img className="img1" src="./assets/bike2.jpg"></img>
-            <img className="img2" src="./assets/bike1.jpg"></img>
+            <img className="img1" src={bike2a}></img>
+            <img className="img2" src={bike2b}></img>
         </div>
     )
 }

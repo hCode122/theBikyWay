@@ -1,7 +1,19 @@
 import { useEffect, useState } from "react";
 import "./products.css"
-import bike1 from './assets/bike5.jpg'
-
+import bike1 from './assets/bike1.jpg'
+import bike2 from './assets/bike2.jpg'
+import bike3 from './assets/bike3.jpg'
+import bike4 from './assets/bike4.jpg'
+import bike5 from './assets/bike5.jpg'
+import bike6 from './assets/bike6.jpg'
+import bike7 from './assets/bike7.jpg'
+import bike8 from './assets/bike8.jpg'
+import bike9 from './assets/bike9.jpg'
+import bike10 from './assets/bike10.jpg'
+import bike11 from './assets/bike11.jpg'
+import bike12 from './assets/bike12.jpg'
+import priceI from './assets/price.svg'
+import cart from './assets/cart.svg'
 
 const Products = () => {
     const [type, setType] = useState('road');
@@ -74,23 +86,23 @@ const ProductList = ({type,data,setData,sum,setSum}) => {
         <div className="products">
             { type  == "road" ?  (<>
                 <Item addItem={update} data={data} lnk={bike1} nam='bike A' price='500'></Item>
-                <Item addItem={update} data={data} lnk="./bike6.jpg" nam='bike B' price='700'></Item>
+                <Item addItem={update} data={data} lnk={bike2} nam='bike B' price='700'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk="~/src/assets/bike7.jpg" nam='bike C' price='600'></Item>
-                <Item addItem={update} data={data} lnk='/theBikyWay/src/assets/bike8.jpg' nam='bike D' price='1500'></Item>
+                <Item addItem={update} data={data} lnk={bike3} nam='bike C' price='600'></Item>
+                <Item addItem={update} data={data} lnk={bike4} nam='bike D' price='1500'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk='src/assets/bike9.jpg' nam='bike E' price='3600'></Item>
-                <Item addItem={update} data={data} lnk='./assets/bike10.jpg' nam='bike F' price='3100'></Item>
+                <Item addItem={update} data={data} lnk={bike5} nam='bike E' price='3600'></Item>
+                <Item addItem={update} data={data} lnk={bike6} nam='bike F' price='3100'></Item>
                 </>
             ) : type == "tour" ?  (<>
-                <Item addItem={update} data={data} lnk='./assets/bike11.jpg' nam='bike G' price='300'></Item>
-                <Item addItem={update} data={data} lnk='./assets/bike12.jpg' nam='bike H' price='1300'></Item>
+                <Item addItem={update} data={data} lnk={bike7} nam='bike G' price='300'></Item>
+                <Item addItem={update} data={data} lnk={bike8} nam='bike H' price='1300'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk='./assets/bike13.jpg' nam='bike I' price='800'></Item>
-                <Item addItem={update} data={data} lnk='./assets/bike14.jpg' nam='bike J' price='2500'></Item>
+                <Item addItem={update} data={data} lnk={bike9} nam='bike I' price='800'></Item>
+                <Item addItem={update} data={data} lnk={bike10} nam='bike J' price='2500'></Item>
                 <div className="line"></div>
-                <Item addItem={update} data={data} lnk='./assets/bike15.jpg' nam='bike K' price='1600'></Item>
-                <Item addItem={update} data={data} lnk='./assets/bike16.jpg' nam='bike L' price='440'></Item>
+                <Item addItem={update} data={data} lnk={bike11} nam='bike K' price='1600'></Item>
+                <Item addItem={update} data={data} lnk={bike12} nam='bike L' price='440'></Item>
                 </>
             ) : (<></>)
             }   
@@ -123,7 +135,7 @@ const Item = ({lnk,nam,price,addItem,data}) => {
             <img src={lnk}></img>
             <label>Name: {nam}</label>
             <div className="price">
-                <img src='./assets/price.svg'></img>
+                <img src={priceI}></img>
                 <p>Costs: {price}$</p>
             </div>
             
@@ -167,7 +179,7 @@ const Cart = ({data,sum}) => {
 
     return(
         <>
-        <button onClick={cart} className={clas}><img className="cimg" src='./assets/cart.svg'></img></button>
+        <button onClick={cart} className={clas}><img className="cimg" src={cart}></img></button>
         <div key='text' className={itemClas}>
                 <label className="iLabel">Shopping cart</label>
                 <div className="items">
