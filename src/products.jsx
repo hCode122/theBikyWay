@@ -13,7 +13,7 @@ import bike10 from './assets/bike10.jpg'
 import bike11 from './assets/bike11.jpg'
 import bike12 from './assets/bike12.jpg'
 import priceI from './assets/price.svg'
-import cart from './assets/cart.svg'
+import cartI from './assets/cart.svg'
 
 const Products = () => {
     const [type, setType] = useState('road');
@@ -179,7 +179,7 @@ const Cart = ({data,sum}) => {
 
     return(
         <>
-        <button onClick={cart} className={clas}><img className="cimg" src={cart}></img></button>
+        <button onClick={cart} className={clas}><img className="cimg" src={cartI}></img></button>
         <div key='text' className={itemClas}>
                 <label className="iLabel">Shopping cart</label>
                 <div className="items">
