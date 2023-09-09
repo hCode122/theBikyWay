@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./products.css"
 import bike1 from './assets/bike5.jpg'
-import bike2 from "./bike6.jpg"
+
 
 const Products = () => {
     const [type, setType] = useState('road');
@@ -74,7 +74,7 @@ const ProductList = ({type,data,setData,sum,setSum}) => {
         <div className="products">
             { type  == "road" ?  (<>
                 <Item addItem={update} data={data} lnk={bike1} nam='bike A' price='500'></Item>
-                <Item addItem={update} data={data} lnk={bike2} nam='bike B' price='700'></Item>
+                <Item addItem={update} data={data} lnk="./bike6.jpg" nam='bike B' price='700'></Item>
                 <div className="line"></div>
                 <Item addItem={update} data={data} lnk="~/src/assets/bike7.jpg" nam='bike C' price='600'></Item>
                 <Item addItem={update} data={data} lnk='/theBikyWay/src/assets/bike8.jpg' nam='bike D' price='1500'></Item>
