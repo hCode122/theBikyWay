@@ -13,7 +13,7 @@ const Header = ()  => {
                 <img src={logo}></img>
             </div>
             <div className="right">
-                <Link to="/TheBikyWay/products" className="button">Products</Link>
+                <Link to="/products" className="button">Products</Link>
                 
                 
             </div>
